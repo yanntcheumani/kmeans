@@ -6,8 +6,15 @@ import random
 import numpy as np
 
 class Management:
-
     def __init__(self, file_image: str, nbr_cluster: int, nbr_convergence: float, display_state=False):
+        """
+
+        :param file_image:  path to the image
+        :param nbr_cluster:  number of color in the new image
+        :param nbr_convergence: the number of convergence between each cluster
+        :param display_state: display state every x steps
+        """
+
         self.file_image = file_image
         self.nbr_cluster = nbr_cluster
         self.nbr_convergence = nbr_convergence
